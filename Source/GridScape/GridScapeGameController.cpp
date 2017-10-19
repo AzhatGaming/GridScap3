@@ -168,7 +168,7 @@ void AGridScapeGameController::GeneratePuzzle()
 			{
 				NewCube->SetCoordinate(CubeCoordinate);
 				NewCube->OnCubeClick.AddUniqueDynamic(this, &AGridScapeGameController::BindToDelegateCubeClicked);
-				NewCube->SetActorLabel(CubeCoordinate.ToCompactString());
+				//NewCube->SetActorLabel(CubeCoordinate.ToCompactString());
 				CubeArray.Add(NewCube);
 
 				// Add the barriers for this cube
